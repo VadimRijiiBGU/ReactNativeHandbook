@@ -11,7 +11,7 @@ export const signIn = (email, password) => {
             await AsyncStorage.setItem('token', response.data.data.token);
             console.log('HERE');
             dispatch({ type: 'SIGN_IN', payload: response.data.data.token });
-            navigate('Todo');
+            navigate('Components');
         } catch (err) {
             console.log('ERROR', err.response.data);
             dispatch({ type: 'SIGN_ERROR', payload: err.response.data.message || 'Server error!' });

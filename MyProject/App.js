@@ -19,7 +19,7 @@ import reducer from './src/reducers/index';
 import HomeScreen from './src/screens/HomeScreen';
 import SigninScreen from './src/screens/SigninScreen';
 import SignupScreen from './src/screens/SignupScreen';
-import TodoScreen from './src/screens/TodoScreen';
+import ComponentsScreen from './src/screens/ComponentsScreen';
 import { setNavigator } from './src/navigationRef';
 
 const switchNavigator = createStackNavigator({
@@ -28,7 +28,7 @@ const switchNavigator = createStackNavigator({
         Signin: SigninScreen,
         Signup: SignupScreen
     }),
-    Todo: TodoScreen
+    Components: ComponentsScreen
 });
 
 const AppNavigator = createAppContainer(switchNavigator);
